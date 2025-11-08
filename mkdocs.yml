@@ -1,0 +1,151 @@
+site_name: Money In & Out
+site_description: Simple expense tracker for iOS and macOS
+site_author: Money In & Out Team
+site_url: https://jack-cap.github.io/MoneyInOut-Page/
+
+repo_name: jack-cap/MoneyInOut-Page
+repo_url: https://github.com/jack-cap/MoneyInOut-Page
+
+theme:
+  name: material
+  custom_dir: overrides
+  logo: assets/AppIcon.png
+  favicon: assets/AppIcon.png
+  palette:
+    # Light mode - Soft minty turquoise from logo
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode - Matching logo colors
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    # Navigation
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    # - navigation.expand  # Removed: allows sections to be collapsible
+    - navigation.path
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    # Table of contents
+    - toc.follow
+    - toc.integrate
+    # Search
+    - search.suggest
+    - search.highlight
+    - search.share
+    # Content
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+    # Header
+    - header.autohide
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/cash-multiple
+
+markdown_extensions:
+  # Admonitions
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  # Code highlighting
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  # Tabs
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+  # Lists and formatting
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  # Emojis and icons
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # Attributes and HTML
+  - attr_list
+  - md_in_html
+  # Tables
+  - tables
+  # Table of contents
+  - toc:
+      permalink: true
+      permalink_title: Anchor link to this section
+      toc_depth: 3
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: getting-started/installation.md
+    - Overview: getting-started/overview.md
+    - Quick Start: user-guide/quick-start.md
+  - User Guide:
+    - Receipt Scanner: user-guide/receipt-scanner.md
+    - Managing Transactions: user-guide/transactions.md
+    - Categories: user-guide/categories.md
+    - Analysis & Reports: user-guide/analysis.md
+    - iCloud Sync: user-guide/icloud-sync.md
+  - Help & Support:
+    - FAQ: faq.md
+    - Support: support.md
+    - Privacy Policy: privacy-policy.md
+  # - Development:
+  #   - Architecture: development/architecture.md
+  #   - Testing: development/testing.md
+  #   - Contributing: development/contributing.md
+
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/jack-cap/MoneyInOut-Page
+      name: GitHub Repository
+    # - icon: fontawesome/brands/app-store-ios
+    #   link: https://apps.apple.com/app/money-in-out
+    #   name: Download on App Store
+  generator: false  # Remove "Made with Material for MkDocs"
+  
+extra_css:
+  - stylesheets/extra.css
+
+copyright: |
+  Copyright &copy; 2025 Money In & Out · 
+  <a href="#__consent">Cookie Settings</a> · 
+  <a href="privacy-policy/">Privacy Policy</a>
