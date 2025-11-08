@@ -1,0 +1,381 @@
+/* ============================================
+   Money In & Out - Custom Styles
+   ============================================ */
+
+/* Root variables matching app logo colors */
+:root {
+  /* Logo colors: Soft minty turquoise and warm orange */
+  --logo-turquoise: #5DD9C1;
+  --logo-mint: #7FE8D3;
+  --logo-teal: #3EBAAA;
+  --logo-orange: #F4A460;
+  --logo-coral: #FF7F50;
+  --logo-peach: #FFD4A3;
+  
+  /* Custom primary color - darker turquoise for contrast */
+  --md-primary-fg-color: #3EBAAA;
+  --md-primary-fg-color--light: #5DD9C1;
+  --md-primary-fg-color--dark: #2A9D8F;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: #f8fffe;
+  
+  /* Accent colors */
+  --md-accent-fg-color: #FF7F50;
+  --md-accent-fg-color--transparent: rgba(255, 127, 80, 0.1);
+  
+  /* Gradients matching logo flow - darker for contrast */
+  --gradient-primary: linear-gradient(135deg, #5DD9C1 0%, #3EBAAA 50%, #2A9D8F 100%);
+  --gradient-accent: linear-gradient(135deg, #FFD4A3 0%, #F4A460 50%, #FF7F50 100%);
+  --gradient-hero: linear-gradient(135deg, #5DD9C1 0%, #F4A460 100%);
+  
+  /* Shadows with turquoise tint */
+  --shadow-sm: 0 2px 8px rgba(62, 186, 170, 0.15);
+  --shadow-md: 0 4px 16px rgba(62, 186, 170, 0.2);
+  --shadow-lg: 0 8px 32px rgba(62, 186, 170, 0.25);
+  --shadow-orange: 0 4px 16px rgba(244, 164, 96, 0.3);
+  
+  --border-radius: 12px;
+}
+
+/* Dark mode adjustments */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #5DD9C1;
+  --md-primary-fg-color--light: #7FE8D3;
+  --md-primary-fg-color--dark: #3EBAAA;
+  --md-accent-fg-color: #F4A460;
+  --shadow-sm: 0 2px 8px rgba(93, 217, 193, 0.2);
+  --shadow-md: 0 4px 16px rgba(93, 217, 193, 0.3);
+  --shadow-lg: 0 8px 32px rgba(93, 217, 193, 0.4);
+}
+
+/* ============================================
+   Typography Enhancements
+   ============================================ */
+
+/* Smooth font rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Hero section on homepage - matching logo gradient */
+.md-typeset h1:first-of-type {
+  font-size: 3rem;
+  font-weight: 800;
+  background: var(--gradient-hero);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+
+/* Subtitle styling */
+.md-typeset h2:first-of-type {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--md-default-fg-color--light);
+  margin-top: 0;
+}
+
+/* ============================================
+   Button Enhancements
+   ============================================ */
+
+/* Primary buttons with logo-inspired gradient */
+.md-button--primary {
+  background: var(--gradient-hero) !important;
+  border: none !important;
+  box-shadow: var(--shadow-orange);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 600;
+  padding: 0.75em 2em;
+  border-radius: var(--border-radius);
+}
+
+.md-button--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(244, 164, 96, 0.4);
+  filter: brightness(1.05);
+}
+
+/* Secondary buttons */
+.md-button {
+  border-radius: var(--border-radius);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 500;
+}
+
+.md-button:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ============================================
+   Card-like Content Blocks
+   ============================================ */
+
+/* Admonitions with logo-inspired styling */
+.md-typeset .admonition {
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+  border-left: 4px solid var(--logo-turquoise);
+  transition: all 0.3s ease;
+}
+
+.md-typeset .admonition:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+/* Tip admonitions with orange accent */
+.md-typeset .admonition.tip {
+  border-left-color: var(--logo-orange);
+}
+
+/* Warning admonitions with coral accent */
+.md-typeset .admonition.warning {
+  border-left-color: var(--logo-coral);
+}
+
+/* Code blocks with enhanced styling */
+.md-typeset pre {
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.md-typeset code {
+  border-radius: 6px;
+  padding: 0.2em 0.4em;
+}
+
+/* ============================================
+   Navigation Enhancements
+   ============================================ */
+
+/* Sticky navigation tabs with soft minty gradient */
+.md-tabs {
+  background: var(--gradient-primary);
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(10px);
+}
+
+/* Header with darker turquoise for better contrast */
+.md-header {
+  background-color: var(--md-primary-fg-color);
+  box-shadow: 0 0 0.2rem rgba(62, 186, 170, 0.1), 0 0.2rem 0.4rem rgba(62, 186, 170, 0.2);
+}
+
+.md-header--shadow {
+  box-shadow: 0 0 0.2rem rgba(62, 186, 170, 0.1), 0 0.2rem 0.4rem rgba(62, 186, 170, 0.3);
+}
+
+/* Ensure header text has good contrast */
+.md-header__title,
+.md-header__button {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.md-header__button:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* Navigation items */
+.md-nav__link--active {
+  font-weight: 600;
+  color: var(--md-accent-fg-color);
+}
+
+/* Collapsible navigation sections */
+.md-nav__item--nested > .md-nav__link {
+  font-weight: 600;
+  color: var(--md-primary-fg-color);
+}
+
+.md-nav__item--nested > .md-nav__link:hover {
+  color: var(--md-accent-fg-color);
+}
+
+/* Toggle icon for collapsible sections */
+.md-nav__toggle ~ .md-nav__link::after {
+  transition: transform 0.3s ease;
+}
+
+.md-nav__toggle:checked ~ .md-nav__link::after {
+  transform: rotate(90deg);
+}
+
+/* Table of contents */
+.md-sidebar--secondary {
+  border-left: 1px solid var(--md-default-fg-color--lightest);
+}
+
+/* ============================================
+   Homepage Specific Styles
+   ============================================ */
+
+/* App icon styling with glow effect */
+.md-content img[alt*="App Icon"] {
+  border-radius: 22%;
+  box-shadow: 0 8px 32px rgba(93, 217, 193, 0.3);
+  transition: all 0.3s ease;
+}
+
+.md-content img[alt*="App Icon"]:hover {
+  transform: scale(1.05) rotate(2deg);
+  box-shadow: 0 12px 48px rgba(93, 217, 193, 0.4), 
+              0 0 60px rgba(244, 164, 96, 0.3);
+}
+
+/* Feature lists with logo colors */
+.md-typeset ul li {
+  margin-bottom: 0.5em;
+}
+
+.md-typeset ul li strong {
+  background: var(--gradient-hero);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+/* ============================================
+   Tables
+   ============================================ */
+
+.md-typeset table:not([class]) {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--gradient-primary);
+  color: white;
+  font-weight: 600;
+}
+
+.md-typeset table:not([class]) tr:hover {
+  background-color: var(--md-default-fg-color--lightest);
+}
+
+/* ============================================
+   Search
+   ============================================ */
+
+.md-search__input {
+  border-radius: var(--border-radius);
+}
+
+.md-search__input:focus {
+  box-shadow: var(--shadow-md);
+}
+
+/* ============================================
+   Footer
+   ============================================ */
+
+.md-footer {
+  background: var(--gradient-primary);
+}
+
+.md-footer-meta {
+  background-color: rgba(62, 186, 170, 0.1);
+}
+
+/* Footer links */
+.md-footer__link {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.md-footer__link:hover {
+  color: var(--logo-peach);
+}
+
+/* ============================================
+   Animations
+   ============================================ */
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fade in animation for content */
+.md-content {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================
+   Responsive Adjustments
+   ============================================ */
+
+@media screen and (max-width: 76.1875em) {
+  .md-typeset h1:first-of-type {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-typeset h1:first-of-type {
+    font-size: 1.75rem;
+  }
+  
+  .md-button--primary {
+    padding: 0.6em 1.5em;
+  }
+}
+
+/* ============================================
+   Dark Mode Specific Adjustments
+   ============================================ */
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background: var(--gradient-primary);
+}
+
+[data-md-color-scheme="slate"] .md-tabs {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border-bottom: 2px solid var(--logo-turquoise);
+}
+
+[data-md-color-scheme="slate"] .md-footer {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border-top: 2px solid var(--logo-turquoise);
+}
+
+/* ============================================
+   Accessibility
+   ============================================ */
+
+/* Focus indicators */
+a:focus,
+button:focus,
+input:focus {
+  outline: 2px solid var(--md-accent-fg-color);
+  outline-offset: 2px;
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,1780 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Simple expense tracker for iOS and macOS">
+      
+      
+        <meta name="author" content="Money In & Out Team">
+      
+      
+        <link rel="canonical" href="https://jack-cap.github.io/MoneyInOut-Page/user-guide/analysis/">
+      
+      
+        <link rel="prev" href="../categories/">
+      
+      
+        <link rel="next" href="../icloud-sync/">
+      
+      
+      <link rel="icon" href="../../assets/AppIcon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
+    
+    
+      
+        <title>Analysis & Reports - Money In & Out</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2a3383ac.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#analysis-reports" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+  <!-- Optional announcement bar -->
+  <!-- <div style="background: linear-gradient(135deg, #00897b 0%, #4caf50 100%); color: white; padding: 0.5em; text-align: center; font-weight: 500;">
+    🎉 Money In & Out is now available on the App Store!
+  </div> -->
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Money In &amp; Out" class="md-header__button md-logo" aria-label="Money In & Out" data-md-component="logo">
+      
+  <img src="../../assets/AppIcon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Money In & Out
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Analysis & Reports
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="deep-orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/jack-cap/MoneyInOut-Page" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jack-cap/MoneyInOut-Page
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../getting-started/installation/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../receipt-scanner/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  User Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../faq/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Help & Support
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Money In &amp; Out" class="md-nav__button md-logo" aria-label="Money In & Out" data-md-component="logo">
+      
+  <img src="../../assets/AppIcon.png" alt="logo">
+
+    </a>
+    Money In & Out
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/jack-cap/MoneyInOut-Page" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jack-cap/MoneyInOut-Page
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quick Start
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    User Guide
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            User Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../receipt-scanner/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Receipt Scanner
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../transactions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Managing Transactions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../categories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Categories
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Analysis & Reports
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Analysis & Reports
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#period-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Period Selection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Period Selection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#available-periods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Available Periods
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigating-periods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigating Periods
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#period-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Period Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary Statistics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Summary Statistics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Metrics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#understanding-net-balance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Net Balance
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#category-breakdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      Category Breakdown
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Category Breakdown">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pie-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pie Chart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#category-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      Category List
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#top-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Top Categories
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#income-vs-expense" class="md-nav__link">
+    <span class="md-ellipsis">
+      Income vs Expense
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Income vs Expense">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comparison-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comparison View
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trend-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trend Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transaction-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transaction Details
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Transaction Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#drill-down" class="md-nav__link">
+    <span class="md-ellipsis">
+      Drill Down
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-by-category" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filter by Category
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#time-based-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time-Based Analysis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Time-Based Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#daily-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Daily Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weekly-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Weekly Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monthly-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monthly Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yearly-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Yearly Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#insights-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Insights &amp; Patterns
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Insights &amp; Patterns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-to-look-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      What to Look For
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Patterns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#export-sharing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Export &amp; Sharing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Export &amp; Sharing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#export-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Export Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whats-included" class="md-nav__link">
+    <span class="md-ellipsis">
+      What's Included
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Cases
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-for-better-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tips for Better Analysis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tips for Better Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regular-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regular Review
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-benchmarks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set Benchmarks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#be-honest" class="md-nav__link">
+    <span class="md-ellipsis">
+      Be Honest
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#context-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Context Matters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Analysis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#multi-period-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multi-Period Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#category-deep-dive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Category Deep Dive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#income-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Income Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#numbers-dont-match" class="md-nav__link">
+    <span class="md-ellipsis">
+      Numbers Don't Match
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missing-transactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Missing Transactions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chart-not-updating" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chart Not Updating
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Steps
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../icloud-sync/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    iCloud Sync
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Help & Support
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Help & Support
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FAQ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Support
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../privacy-policy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Privacy Policy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="analysis-reports">Analysis &amp; Reports<a class="headerlink" href="#analysis-reports" title="Anchor link to this section">&para;</a></h1>
+<p>Understand your spending patterns with Money In &amp; Out's analysis features.</p>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Anchor link to this section">&para;</a></h2>
+<p>The Analysis view helps you visualize and understand your financial data through charts, summaries, and breakdowns.</p>
+<h2 id="period-selection">Period Selection<a class="headerlink" href="#period-selection" title="Anchor link to this section">&para;</a></h2>
+<h3 id="available-periods">Available Periods<a class="headerlink" href="#available-periods" title="Anchor link to this section">&para;</a></h3>
+<p>View your data by:</p>
+<ul>
+<li><strong>Day</strong> - Single day breakdown</li>
+<li><strong>Week</strong> - 7-day period</li>
+<li><strong>Month</strong> - Calendar month</li>
+<li><strong>Year</strong> - Full year</li>
+</ul>
+<h3 id="navigating-periods">Navigating Periods<a class="headerlink" href="#navigating-periods" title="Anchor link to this section">&para;</a></h3>
+<ul>
+<li><strong>Current</strong> - Tap period name to return to current</li>
+<li><strong>Previous</strong> - Tap left arrow</li>
+<li><strong>Next</strong> - Tap right arrow</li>
+<li><strong>Jump</strong> - Tap date to select specific period</li>
+</ul>
+<h3 id="period-comparison">Period Comparison<a class="headerlink" href="#period-comparison" title="Anchor link to this section">&para;</a></h3>
+<p>Compare periods to see:</p>
+<ul>
+<li>Spending trends</li>
+<li>Seasonal patterns</li>
+<li>Growth or reduction</li>
+<li>Category changes</li>
+</ul>
+<h2 id="summary-statistics">Summary Statistics<a class="headerlink" href="#summary-statistics" title="Anchor link to this section">&para;</a></h2>
+<h3 id="key-metrics">Key Metrics<a class="headerlink" href="#key-metrics" title="Anchor link to this section">&para;</a></h3>
+<p>At a glance, see:</p>
+<ul>
+<li><strong>Total Income</strong> - All money in</li>
+<li><strong>Total Expenses</strong> - All money out</li>
+<li><strong>Net Balance</strong> - Income minus expenses</li>
+<li><strong>Transaction Count</strong> - Number of transactions</li>
+</ul>
+<h3 id="understanding-net-balance">Understanding Net Balance<a class="headerlink" href="#understanding-net-balance" title="Anchor link to this section">&para;</a></h3>
+<ul>
+<li><strong>Positive</strong> (green) - Income &gt; Expenses</li>
+<li><strong>Negative</strong> (red) - Expenses &gt; Income</li>
+<li><strong>Zero</strong> - Income = Expenses</li>
+</ul>
+<h2 id="category-breakdown">Category Breakdown<a class="headerlink" href="#category-breakdown" title="Anchor link to this section">&para;</a></h2>
+<h3 id="pie-chart">Pie Chart<a class="headerlink" href="#pie-chart" title="Anchor link to this section">&para;</a></h3>
+<p>Visual representation showing:</p>
+<ul>
+<li>Each category as a slice</li>
+<li>Size proportional to spending</li>
+<li>Color-coded by category</li>
+<li>Percentage of total</li>
+</ul>
+<h3 id="category-list">Category List<a class="headerlink" href="#category-list" title="Anchor link to this section">&para;</a></h3>
+<p>Detailed breakdown with:</p>
+<ul>
+<li>Category name and icon</li>
+<li>Total amount spent</li>
+<li>Percentage of total spending</li>
+<li>Number of transactions</li>
+<li>Tap to see category details</li>
+</ul>
+<h3 id="top-categories">Top Categories<a class="headerlink" href="#top-categories" title="Anchor link to this section">&para;</a></h3>
+<p>Quickly identify:</p>
+<ul>
+<li>Highest spending categories</li>
+<li>Categories to focus on</li>
+<li>Unexpected high spenders</li>
+</ul>
+<h2 id="income-vs-expense">Income vs Expense<a class="headerlink" href="#income-vs-expense" title="Anchor link to this section">&para;</a></h2>
+<h3 id="comparison-view">Comparison View<a class="headerlink" href="#comparison-view" title="Anchor link to this section">&para;</a></h3>
+<p>See the balance between:</p>
+<ul>
+<li>Total income (green)</li>
+<li>Total expenses (red)</li>
+<li>Net difference</li>
+</ul>
+<h3 id="trend-analysis">Trend Analysis<a class="headerlink" href="#trend-analysis" title="Anchor link to this section">&para;</a></h3>
+<p>Track over time:</p>
+<ul>
+<li>Are expenses growing?</li>
+<li>Is income stable?</li>
+<li>What's the trend?</li>
+</ul>
+<h2 id="transaction-details">Transaction Details<a class="headerlink" href="#transaction-details" title="Anchor link to this section">&para;</a></h2>
+<h3 id="drill-down">Drill Down<a class="headerlink" href="#drill-down" title="Anchor link to this section">&para;</a></h3>
+<p>From analysis, dive deeper:</p>
+<ol>
+<li>Tap a category</li>
+<li>See all transactions in that category</li>
+<li>Review individual items</li>
+<li>Edit if needed</li>
+</ol>
+<h3 id="filter-by-category">Filter by Category<a class="headerlink" href="#filter-by-category" title="Anchor link to this section">&para;</a></h3>
+<p>Focus on specific spending:</p>
+<ol>
+<li>Select category from chart</li>
+<li>View only those transactions</li>
+<li>See date range</li>
+<li>Check totals</li>
+</ol>
+<h2 id="time-based-analysis">Time-Based Analysis<a class="headerlink" href="#time-based-analysis" title="Anchor link to this section">&para;</a></h2>
+<h3 id="daily-analysis">Daily Analysis<a class="headerlink" href="#daily-analysis" title="Anchor link to this section">&para;</a></h3>
+<p>Best for:</p>
+<ul>
+<li>Tracking daily spending</li>
+<li>Identifying expensive days</li>
+<li>Daily budget monitoring</li>
+</ul>
+<p>Shows:</p>
+<ul>
+<li>Today's transactions</li>
+<li>Today's total</li>
+<li>Compare to average</li>
+</ul>
+<h3 id="weekly-analysis">Weekly Analysis<a class="headerlink" href="#weekly-analysis" title="Anchor link to this section">&para;</a></h3>
+<p>Best for:</p>
+<ul>
+<li>Weekly spending patterns</li>
+<li>Paycheck-to-paycheck tracking</li>
+<li>Short-term trends</li>
+</ul>
+<p>Shows:</p>
+<ul>
+<li>7-day summary</li>
+<li>Day-by-day breakdown</li>
+<li>Week-over-week comparison</li>
+</ul>
+<h3 id="monthly-analysis">Monthly Analysis<a class="headerlink" href="#monthly-analysis" title="Anchor link to this section">&para;</a></h3>
+<p>Best for:</p>
+<ul>
+<li>Monthly budget tracking</li>
+<li>Bill payment cycles</li>
+<li>Medium-term patterns</li>
+</ul>
+<p>Shows:</p>
+<ul>
+<li>Full month summary</li>
+<li>Category breakdown</li>
+<li>Month-over-month trends</li>
+</ul>
+<h3 id="yearly-analysis">Yearly Analysis<a class="headerlink" href="#yearly-analysis" title="Anchor link to this section">&para;</a></h3>
+<p>Best for:</p>
+<ul>
+<li>Annual spending review</li>
+<li>Long-term trends</li>
+<li>Tax preparation</li>
+<li>Big picture view</li>
+</ul>
+<p>Shows:</p>
+<ul>
+<li>12-month summary</li>
+<li>Month-by-month breakdown</li>
+<li>Year-over-year comparison</li>
+</ul>
+<h2 id="insights-patterns">Insights &amp; Patterns<a class="headerlink" href="#insights-patterns" title="Anchor link to this section">&para;</a></h2>
+<h3 id="what-to-look-for">What to Look For<a class="headerlink" href="#what-to-look-for" title="Anchor link to this section">&para;</a></h3>
+<h4 id="spending-patterns">Spending Patterns<a class="headerlink" href="#spending-patterns" title="Anchor link to this section">&para;</a></h4>
+<ul>
+<li>Which categories dominate?</li>
+<li>Any surprising amounts?</li>
+<li>Consistent or variable spending?</li>
+</ul>
+<h4 id="trends">Trends<a class="headerlink" href="#trends" title="Anchor link to this section">&para;</a></h4>
+<ul>
+<li>Increasing expenses?</li>
+<li>Decreasing income?</li>
+<li>Seasonal variations?</li>
+</ul>
+<h4 id="opportunities">Opportunities<a class="headerlink" href="#opportunities" title="Anchor link to this section">&para;</a></h4>
+<ul>
+<li>Categories to reduce?</li>
+<li>Unnecessary spending?</li>
+<li>Budget adjustments needed?</li>
+</ul>
+<h3 id="common-patterns">Common Patterns<a class="headerlink" href="#common-patterns" title="Anchor link to this section">&para;</a></h3>
+<h4 id="weekend-spending">Weekend Spending<a class="headerlink" href="#weekend-spending" title="Anchor link to this section">&para;</a></h4>
+<ul>
+<li>Higher entertainment expenses</li>
+<li>More dining out</li>
+<li>Increased shopping</li>
+</ul>
+<h4 id="monthly-cycles">Monthly Cycles<a class="headerlink" href="#monthly-cycles" title="Anchor link to this section">&para;</a></h4>
+<ul>
+<li>Bills at month start</li>
+<li>Groceries mid-month</li>
+<li>Discretionary at month end</li>
+</ul>
+<h4 id="seasonal-variations">Seasonal Variations<a class="headerlink" href="#seasonal-variations" title="Anchor link to this section">&para;</a></h4>
+<ul>
+<li>Holiday spending spikes</li>
+<li>Summer travel costs</li>
+<li>Back-to-school expenses</li>
+</ul>
+<h2 id="export-sharing">Export &amp; Sharing<a class="headerlink" href="#export-sharing" title="Anchor link to this section">&para;</a></h2>
+<h3 id="export-data">Export Data<a class="headerlink" href="#export-data" title="Anchor link to this section">&para;</a></h3>
+<p>To export your analysis:</p>
+<ol>
+<li>Go to Settings or More</li>
+<li>Select Export</li>
+<li>Choose format (CSV)</li>
+<li>Select date range</li>
+<li>Save or share</li>
+</ol>
+<h3 id="whats-included">What's Included<a class="headerlink" href="#whats-included" title="Anchor link to this section">&para;</a></h3>
+<p>Export contains:</p>
+<ul>
+<li>All transactions in range</li>
+<li>Date, amount, type</li>
+<li>Category, notes</li>
+<li>Formatted for spreadsheets</li>
+</ul>
+<h3 id="use-cases">Use Cases<a class="headerlink" href="#use-cases" title="Anchor link to this section">&para;</a></h3>
+<ul>
+<li>Import to Excel/Numbers</li>
+<li>Share with accountant</li>
+<li>Backup your data</li>
+<li>Further analysis</li>
+</ul>
+<h2 id="tips-for-better-analysis">Tips for Better Analysis<a class="headerlink" href="#tips-for-better-analysis" title="Anchor link to this section">&para;</a></h2>
+<h3 id="regular-review">Regular Review<a class="headerlink" href="#regular-review" title="Anchor link to this section">&para;</a></h3>
+<ul>
+<li>Check weekly at minimum</li>
+<li>Monthly deep dive</li>
+<li>Quarterly trends</li>
+<li>Annual review</li>
+</ul>
+<h3 id="set-benchmarks">Set Benchmarks<a class="headerlink" href="#set-benchmarks" title="Anchor link to this section">&para;</a></h3>
+<ul>
+<li>Know your average spending</li>
+<li>Set category targets</li>
+<li>Track against goals</li>
+<li>Adjust as needed</li>
+</ul>
+<h3 id="be-honest">Be Honest<a class="headerlink" href="#be-honest" title="Anchor link to this section">&para;</a></h3>
+<ul>
+<li>Don't ignore categories</li>
+<li>Face the numbers</li>
+<li>Use insights to improve</li>
+<li>Celebrate progress</li>
+</ul>
+<h3 id="context-matters">Context Matters<a class="headerlink" href="#context-matters" title="Anchor link to this section">&para;</a></h3>
+<ul>
+<li>Consider life changes</li>
+<li>Account for one-time expenses</li>
+<li>Seasonal variations are normal</li>
+<li>Long-term trends matter most</li>
+</ul>
+<h2 id="advanced-analysis">Advanced Analysis<a class="headerlink" href="#advanced-analysis" title="Anchor link to this section">&para;</a></h2>
+<h3 id="multi-period-comparison">Multi-Period Comparison<a class="headerlink" href="#multi-period-comparison" title="Anchor link to this section">&para;</a></h3>
+<p>Compare across periods:</p>
+<ol>
+<li>Note current period totals</li>
+<li>Navigate to previous period</li>
+<li>Compare numbers</li>
+<li>Look for trends</li>
+</ol>
+<h3 id="category-deep-dive">Category Deep Dive<a class="headerlink" href="#category-deep-dive" title="Anchor link to this section">&para;</a></h3>
+<p>Analyze specific category:</p>
+<ol>
+<li>Select category</li>
+<li>View all transactions</li>
+<li>Look for patterns</li>
+<li>Identify outliers</li>
+</ol>
+<h3 id="income-analysis">Income Analysis<a class="headerlink" href="#income-analysis" title="Anchor link to this section">&para;</a></h3>
+<p>Focus on income:</p>
+<ol>
+<li>Filter to income only</li>
+<li>View income categories</li>
+<li>Track income trends</li>
+<li>Identify income sources</li>
+</ol>
+<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Anchor link to this section">&para;</a></h2>
+<h3 id="numbers-dont-match">Numbers Don't Match<a class="headerlink" href="#numbers-dont-match" title="Anchor link to this section">&para;</a></h3>
+<p>If totals seem wrong:</p>
+<ul>
+<li>Check date range</li>
+<li>Verify all transactions loaded</li>
+<li>Check for filters applied</li>
+<li>Ensure iCloud sync complete</li>
+</ul>
+<h3 id="missing-transactions">Missing Transactions<a class="headerlink" href="#missing-transactions" title="Anchor link to this section">&para;</a></h3>
+<p>If transactions don't appear:</p>
+<ul>
+<li>Check period selection</li>
+<li>Verify transaction date</li>
+<li>Check category filters</li>
+<li>Refresh the view</li>
+</ul>
+<h3 id="chart-not-updating">Chart Not Updating<a class="headerlink" href="#chart-not-updating" title="Anchor link to this section">&para;</a></h3>
+<p>If chart doesn't refresh:</p>
+<ul>
+<li>Pull to refresh</li>
+<li>Close and reopen app</li>
+<li>Check for app updates</li>
+</ul>
+<h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Anchor link to this section">&para;</a></h2>
+<ul>
+<li><a href="../icloud-sync/">Learn about iCloud sync</a></li>
+<li><a href="../transactions/">Master transactions</a></li>
+<li><a href="../categories/">Organize with categories</a></li>
+<li><a href="../../faq/">Check FAQ</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../categories/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Categories">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Categories
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../icloud-sync/" class="md-footer__link md-footer__link--next" aria-label="Next: iCloud Sync">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                iCloud Sync
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Money In & Out · 
+<a href="#__consent">Cookie Settings</a> · 
+<a href="privacy-policy/">Privacy Policy</a>
+
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/jack-cap/MoneyInOut-Page" target="_blank" rel="noopener" title="GitHub Repository" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.path", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "toc.integrate", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link", "content.tooltips", "header.autohide"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
