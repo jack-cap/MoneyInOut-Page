@@ -137,9 +137,9 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/jack-cap/MoneyInOut-Page
       name: GitHub Repository
-    # - icon: fontawesome/brands/app-store-ios
-    #   link: https://apps.apple.com/app/money-in-out
-    #   name: Download on App Store
+    - icon: fontawesome/brands/app-store-ios
+      link: https://apps.apple.com/us/app/money-in-out/id6755004927
+      name: Download on App Store
   generator: false  # Remove "Made with Material for MkDocs"
   
 extra_css:

@@ -56,7 +56,7 @@ That's it. No budgeting, no bank connections, no bill reminders. Just straightfo
 
 ## Get Started
 
-[Download on the App Store](#){ .md-button .md-button--primary }
+[Download on the App Store](https://apps.apple.com/us/app/money-in-out/id6755004927){ .md-button .md-button--primary }
 [Read Documentation](getting-started/installation.md){ .md-button }
 
 ---

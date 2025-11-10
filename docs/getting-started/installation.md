@@ -24,7 +24,7 @@ Get Money In & Out up and running in just a few minutes.
 ### App Store
 Download Money In & Out from the App Store:
 
-[Download on the App Store](#){ .md-button .md-button--primary }
+[Download on the App Store](https://apps.apple.com/us/app/money-in-out/id6755004927){ .md-button .md-button--primary }
 
 1. Open the App Store on your device
 2. Search for "Money In & Out"
